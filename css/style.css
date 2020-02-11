@@ -136,10 +136,16 @@ body {
 .banner {
   position: relative;
   height: 600px;
-  background-image: linear-gradient(rgba(24, 24, 24, 0.5), rgba(50, 50, 50, 0.5)), url('../images/main_foto.png');
+  background-image: linear-gradient(rgba(24, 24, 24, 0.5), rgba(50, 50, 50, 0.5)), url('../images/hero.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(24, 24, 24, 0.5), rgba(50, 50, 50, 0.5)), url('../images/hero@2x.png');
+  }
 }
 
 .hero {
@@ -492,6 +498,10 @@ body {
   margin-right: 0;
 }
 
+.blog__image {
+  height: 262px;
+}
+
 .blog__topic {
   font-size: 18px;
   font-family: var(--font-opensans);
@@ -605,6 +615,7 @@ body {
 }
 
 .submit__icon {
+  display: block;
   height: 50px;
   width: 90px;
   fill: #fff;
