@@ -56,8 +56,7 @@ body {
   line-height: 1.3;
   text-decoration: none;
   color: #fefefe;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 30px;
   padding-bottom: 15px;
   padding-top: 15px;
 }
@@ -217,31 +216,11 @@ body {
   margin-bottom: 30px;
 }
 
-.about__item::before {
-  display: block;
-  content: '';
+.about__icon {
   height: 65px;
   width: 65px;
-  margin: 0 auto;
+  fill: var(--nav-color);
   margin-bottom: 55px;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.about__item--setting::before {
-  background-image: url('../images/icon1.png');
-}
-
-.about__item--money::before {
-  background-image: url('../images/icon2.png');
-}
-
-.about__item--worldwide::before {
-  background-image: url('../images/icon3.png');
-}
-
-.about__item--compass::before {
-  background-image: url('../images/icon4.png');
 }
 
 .about__item {
@@ -432,49 +411,44 @@ body {
   margin-right: 0;
 }
 
-.overlay__icon {
+.button {
   height: 50px;
   width: 50px;
   padding: 0;
   color: #fff;
   background-color: rgba(0, 0, 0, 0);
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   cursor: pointer;
 }
 
-.overlay__icon--heart {
-  background-image: url('../images/icon_heart.png');
+.button__icon {
+  height: 30px;
+  width: 30px;
+  fill: #fff;
 }
 
-.overlay__icon--arrows {
-  background-image: url('../images/icon_second.png');
-}
-
-.overlay__icon--watch {
-  background-image: url('../images/icon_watch.png');
-}
-
-.overlay__button {
-  border: 1px solid #fff;
+.button__buy {
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
   width: 165px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   margin-top: 5px;
   background-color: #323232;
   cursor: pointer;
-  background-image: url('../images/icon_buy.png');
-  background-position: 10%;
-  background-repeat: no-repeat;
 }
 
-.overlay__icon:hover,
-.overlay__button:hover {
+.button__icon--buy {
+  padding-right: 10px;
+}
+
+.button:hover,
+.button__buy:hover {
   background-color: var(--nav-color);
 }
 
@@ -625,12 +599,15 @@ body {
   height: 56px;
   width: 90px;
   background-color: #4ec6ab;
-  background-image: url('../images/footer.png');
-  background-position: center center;
-  background-repeat: no-repeat;
   border-radius: 0 5px 5px 0;
   border: none;
   transition: background-color var(--animation-time) var(--function-time);
+}
+
+.submit__icon {
+  height: 50px;
+  width: 90px;
+  fill: #fff;
 }
 
 .submit:hover {
